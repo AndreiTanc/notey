@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FC2435BB292B925E00A9A20D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2435BA292B925E00A9A20D /* MainView.swift */; };
 		FC2435BD292B926E00A9A20D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2435BC292B926E00A9A20D /* MainViewModel.swift */; };
+		FC2435BF292B92D900A9A20D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2435BE292B92D900A9A20D /* Router.swift */; };
 		FC97DB0D292B88840099DAA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97DB0C292B88840099DAA0 /* AppDelegate.swift */; };
 		FC97DB0F292B88840099DAA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97DB0E292B88840099DAA0 /* SceneDelegate.swift */; };
 		FC97DB11292B88840099DAA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97DB10292B88840099DAA0 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		FC2435BA292B925E00A9A20D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FC2435BC292B926E00A9A20D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FC2435BE292B92D900A9A20D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		FC97DB09292B88840099DAA0 /* ToNotey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToNotey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC97DB0C292B88840099DAA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC97DB0E292B88840099DAA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				FC2435B5292B904A00A9A20D /* Managers */,
 				FC2435B4292B904500A9A20D /* Core */,
 				FC97DB0C292B88840099DAA0 /* AppDelegate.swift */,
+				FC2435BE292B92D900A9A20D /* Router.swift */,
 				FC97DB0E292B88840099DAA0 /* SceneDelegate.swift */,
 				FC97DB10292B88840099DAA0 /* ViewController.swift */,
 				FC97DB12292B88840099DAA0 /* Main.storyboard */,
@@ -196,6 +199,7 @@
 				FC97DB11292B88840099DAA0 /* ViewController.swift in Sources */,
 				FC2435BB292B925E00A9A20D /* MainView.swift in Sources */,
 				FC97DB0D292B88840099DAA0 /* AppDelegate.swift in Sources */,
+				FC2435BF292B92D900A9A20D /* Router.swift in Sources */,
 				FC97DB0F292B88840099DAA0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
