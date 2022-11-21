@@ -22,6 +22,7 @@ enum RouterRoutes {
 final class Router {
     private var navigationController = UINavigationController()
     static var shared = Router()
+    private init() {}
     
     func pushViewController(_ viewController: UIViewController, animated: Bool = true) {
         navigationController.pushViewController(viewController, animated: animated)
