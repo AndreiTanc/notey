@@ -9,8 +9,13 @@ import SwiftUI
 
 struct MainView: View {
     @ObservedObject private(set) var viewModel: MainViewModel
+    
     var body: some View {
-        Text("Main")
+        VStack {
+            HeaderView()
+            Text("Main")
+            Spacer()
+        }.navigationBarHidden(true)
     }
 }
 
