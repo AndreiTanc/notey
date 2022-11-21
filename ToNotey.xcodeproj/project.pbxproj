@@ -12,7 +12,6 @@
 		FC2435BF292B92D900A9A20D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2435BE292B92D900A9A20D /* Router.swift */; };
 		FC97DB0D292B88840099DAA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97DB0C292B88840099DAA0 /* AppDelegate.swift */; };
 		FC97DB0F292B88840099DAA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97DB0E292B88840099DAA0 /* SceneDelegate.swift */; };
-		FC97DB11292B88840099DAA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97DB10292B88840099DAA0 /* ViewController.swift */; };
 		FC97DB16292B88860099DAA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC97DB15292B88860099DAA0 /* Assets.xcassets */; };
 		FC97DB19292B88860099DAA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC97DB17292B88860099DAA0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -24,7 +23,6 @@
 		FC97DB09292B88840099DAA0 /* ToNotey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToNotey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC97DB0C292B88840099DAA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC97DB0E292B88840099DAA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC97DB10292B88840099DAA0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC97DB15292B88860099DAA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC97DB18292B88860099DAA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC97DB1A292B88860099DAA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 				FC97DB0C292B88840099DAA0 /* AppDelegate.swift */,
 				FC2435BE292B92D900A9A20D /* Router.swift */,
 				FC97DB0E292B88840099DAA0 /* SceneDelegate.swift */,
-				FC97DB10292B88840099DAA0 /* ViewController.swift */,
 				FC97DB15292B88860099DAA0 /* Assets.xcassets */,
 				FC97DB17292B88860099DAA0 /* LaunchScreen.storyboard */,
 				FC97DB1A292B88860099DAA0 /* Info.plist */,
@@ -192,7 +189,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC2435BD292B926E00A9A20D /* MainViewModel.swift in Sources */,
-				FC97DB11292B88840099DAA0 /* ViewController.swift in Sources */,
 				FC2435BB292B925E00A9A20D /* MainView.swift in Sources */,
 				FC97DB0D292B88840099DAA0 /* AppDelegate.swift in Sources */,
 				FC2435BF292B92D900A9A20D /* Router.swift in Sources */,
