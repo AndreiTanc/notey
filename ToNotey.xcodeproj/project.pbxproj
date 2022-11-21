@@ -10,6 +10,7 @@
 		FC2435BB292B925E00A9A20D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2435BA292B925E00A9A20D /* MainView.swift */; };
 		FC2435BD292B926E00A9A20D /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2435BC292B926E00A9A20D /* MainViewModel.swift */; };
 		FC2435BF292B92D900A9A20D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2435BE292B92D900A9A20D /* Router.swift */; };
+		FC2435C2292B963F00A9A20D /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = FC2435C1292B963F00A9A20D /* FirebaseCrashlytics */; };
 		FC97DB0D292B88840099DAA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97DB0C292B88840099DAA0 /* AppDelegate.swift */; };
 		FC97DB0F292B88840099DAA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97DB0E292B88840099DAA0 /* SceneDelegate.swift */; };
 		FC97DB16292B88860099DAA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC97DB15292B88860099DAA0 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC2435C2292B963F00A9A20D /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +136,9 @@
 			dependencies = (
 			);
 			name = ToNotey;
+			packageProductDependencies = (
+				FC2435C1292B963F00A9A20D /* FirebaseCrashlytics */,
+			);
 			productName = ToNotey;
 			productReference = FC97DB09292B88840099DAA0 /* ToNotey.app */;
 			productType = "com.apple.product-type.application";
@@ -162,6 +167,9 @@
 				Base,
 			);
 			mainGroup = FC97DB00292B88840099DAA0;
+			packageReferences = (
+				FC2435C0292B963F00A9A20D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = FC97DB0A292B88840099DAA0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -400,6 +408,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FC2435C0292B963F00A9A20D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FC2435C1292B963F00A9A20D /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FC2435C0292B963F00A9A20D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FC97DB01292B88840099DAA0 /* Project object */;
 }
