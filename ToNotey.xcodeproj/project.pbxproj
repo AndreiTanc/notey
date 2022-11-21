@@ -12,6 +12,7 @@
 		FC2435BF292B92D900A9A20D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2435BE292B92D900A9A20D /* Router.swift */; };
 		FC2435C2292B963F00A9A20D /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = FC2435C1292B963F00A9A20D /* FirebaseCrashlytics */; };
 		FC2435C5292BB17D00A9A20D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2435C4292BB17D00A9A20D /* Constants.swift */; };
+		FC2435C7292BB9E300A9A20D /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2435C6292BB9E300A9A20D /* UIImage.swift */; };
 		FC97DB0D292B88840099DAA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97DB0C292B88840099DAA0 /* AppDelegate.swift */; };
 		FC97DB0F292B88840099DAA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97DB0E292B88840099DAA0 /* SceneDelegate.swift */; };
 		FC97DB16292B88860099DAA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC97DB15292B88860099DAA0 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		FC2435BC292B926E00A9A20D /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		FC2435BE292B92D900A9A20D /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		FC2435C4292BB17D00A9A20D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FC2435C6292BB9E300A9A20D /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		FC97DB09292B88840099DAA0 /* ToNotey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToNotey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC97DB0C292B88840099DAA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC97DB0E292B88840099DAA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		FC2435B7292B909100A9A20D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FC2435C6292BB9E300A9A20D /* UIImage.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				FC2435BF292B92D900A9A20D /* Router.swift in Sources */,
 				FC97DB0F292B88840099DAA0 /* SceneDelegate.swift in Sources */,
 				FC2435C5292BB17D00A9A20D /* Constants.swift in Sources */,
+				FC2435C7292BB9E300A9A20D /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
