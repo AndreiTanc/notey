@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 fileprivate let kBackground = "background"
 fileprivate let kCover = "cover"
@@ -16,15 +17,15 @@ fileprivate let kLight = "Light"
 extension UIImage {
     var backgroundImage: UIImage {
         get {
-            let imageName = kBackground + Constants.isDarkMode ? kDark : kLight
-            return UIImage(named: imageName)
+            let imageName = kBackground + (Constants.isDarkMode ? kDark : kLight)
+            return UIImage(named: imageName) ?? UIImage()
         }
     }
     
     var coverImage: UIImage {
         get {
-            let imageName = kCover + Constants.isDarkMode ? kDark : kLight
-            return UIImage(named: imageName)
+            let imageName = kCover + (Constants.isDarkMode ? kDark : kLight)
+            return UIImage(named: imageName) ?? UIImage()
         }
     }
 }
