@@ -14,12 +14,17 @@ struct MainView: View {
         VStack {
             HeaderView()
             
-            ToDoView()
-            
-            Spacer()
-            
+            switch viewModel.currentContentType {
+            case .todo:
+                ToDoView()
+            case .notes:
+                ToDoView()
+            case .folders:
+                ToDoView()
+            }
+                        
             FooterView {
-//                handle plus button tapped
+                viewModel.handleOnPlusButtonTapped()
             }
         }.navigationBarHidden(true)
         .background(

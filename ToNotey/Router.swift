@@ -10,11 +10,14 @@ import SwiftUI
 
 enum RouterRoutes {
     case main
+    case todoFactory
     
     var view: any View {
         switch self {
         case .main:
             return MainView(viewModel: .init())
+        case .todoFactory:
+            return ToDoFactoryView()
         }
     }
 }
