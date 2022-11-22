@@ -19,7 +19,7 @@ struct HeaderScreenTypeButton: View {
 
             if isSelected {
                 RoundedRectangle(cornerRadius: 3)
-                    .fill(Color.black.opacity(0.8))
+                    .fill(Color.theme.primary.opacity(0.8))
                     .matchedGeometryEffect(id: "HeaderScreenTypeButtonId", in: namespace)
                     .frame(width: 66, height: 3)
                     .offset(y: 15)
@@ -30,7 +30,7 @@ struct HeaderScreenTypeButton: View {
                     isSelected = true
                     handleOnTap?()
                 }
-            }.foregroundColor(.black)
+            }.foregroundColor(Color.theme.primary)
             .font(.title2)
             .fontWeight(.bold)
             .opacity(isSelected ? 1 : 0.5)

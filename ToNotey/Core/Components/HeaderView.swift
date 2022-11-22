@@ -33,6 +33,11 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView()
+        Group {
+            HeaderView()
+            
+            HeaderView()
+                .preferredColorScheme(.dark)
+        }
     }
 }

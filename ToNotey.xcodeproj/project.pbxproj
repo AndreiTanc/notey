@@ -21,6 +21,11 @@
 		FC97DB19292B88860099DAA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC97DB17292B88860099DAA0 /* LaunchScreen.storyboard */; };
 		FCADAECA292C1C7300456494 /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAEC9292C1C7300456494 /* ToDoView.swift */; };
 		FCADAECC292C1C7D00456494 /* ToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAECB292C1C7D00456494 /* ToDoViewModel.swift */; };
+		FCADAECE292CB19500456494 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAECD292CB19500456494 /* FooterView.swift */; };
+		FCADAED0292CD2FA00456494 /* ToDoFactoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAECF292CD2FA00456494 /* ToDoFactoryView.swift */; };
+		FCADAED2292CD30B00456494 /* ToDoFactoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAED1292CD30B00456494 /* ToDoFactoryViewModel.swift */; };
+		FCADAED4292CD4A100456494 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAED3292CD4A100456494 /* Color.swift */; };
+		FCADAED6292CDE9500456494 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAED5292CDE9500456494 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +44,11 @@
 		FC97DB1A292B88860099DAA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCADAEC9292C1C7300456494 /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
 		FCADAECB292C1C7D00456494 /* ToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewModel.swift; sourceTree = "<group>"; };
+		FCADAECD292CB19500456494 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		FCADAECF292CD2FA00456494 /* ToDoFactoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoFactoryView.swift; sourceTree = "<group>"; };
+		FCADAED1292CD30B00456494 /* ToDoFactoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoFactoryViewModel.swift; sourceTree = "<group>"; };
+		FCADAED3292CD4A100456494 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		FCADAED5292CDE9500456494 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				FC2435C6292BB9E300A9A20D /* UIImage.swift */,
+				FCADAED3292CD4A100456494 /* Color.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -90,6 +101,7 @@
 			children = (
 				FC2435BA292B925E00A9A20D /* MainView.swift */,
 				FCADAEC9292C1C7300456494 /* ToDoView.swift */,
+				FCADAECF292CD2FA00456494 /* ToDoFactoryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -99,6 +111,7 @@
 			children = (
 				FC2435BC292B926E00A9A20D /* MainViewModel.swift */,
 				FCADAECB292C1C7D00456494 /* ToDoViewModel.swift */,
+				FCADAED1292CD30B00456494 /* ToDoFactoryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -116,6 +129,8 @@
 			children = (
 				FC2435C9292BC08C00A9A20D /* HeaderView.swift */,
 				FC2435CB292BC31800A9A20D /* HeaderScreenTypeButton.swift */,
+				FCADAECD292CB19500456494 /* FooterView.swift */,
+				FCADAED5292CDE9500456494 /* CustomButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -231,14 +246,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC2435BD292B926E00A9A20D /* MainViewModel.swift in Sources */,
+				FCADAED2292CD30B00456494 /* ToDoFactoryViewModel.swift in Sources */,
 				FC2435BB292B925E00A9A20D /* MainView.swift in Sources */,
 				FC97DB0D292B88840099DAA0 /* AppDelegate.swift in Sources */,
+				FCADAED6292CDE9500456494 /* CustomButton.swift in Sources */,
 				FCADAECC292C1C7D00456494 /* ToDoViewModel.swift in Sources */,
 				FC2435BF292B92D900A9A20D /* Router.swift in Sources */,
 				FCADAECA292C1C7300456494 /* ToDoView.swift in Sources */,
 				FC97DB0F292B88840099DAA0 /* SceneDelegate.swift in Sources */,
+				FCADAED4292CD4A100456494 /* Color.swift in Sources */,
 				FC2435C5292BB17D00A9A20D /* Constants.swift in Sources */,
+				FCADAED0292CD2FA00456494 /* ToDoFactoryView.swift in Sources */,
 				FC2435CC292BC31800A9A20D /* HeaderScreenTypeButton.swift in Sources */,
+				FCADAECE292CB19500456494 /* FooterView.swift in Sources */,
 				FC2435C7292BB9E300A9A20D /* UIImage.swift in Sources */,
 				FC2435CA292BC08C00A9A20D /* HeaderView.swift in Sources */,
 			);

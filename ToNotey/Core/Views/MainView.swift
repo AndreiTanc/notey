@@ -13,11 +13,14 @@ struct MainView: View {
     var body: some View {
         VStack {
             HeaderView()
-            Text("Main")
             
             ToDoView()
             
             Spacer()
+            
+            FooterView {
+//                handle plus button tapped
+            }
         }.navigationBarHidden(true)
         .background(
             Image(uiImage: .backgroundImage)
@@ -25,12 +28,17 @@ struct MainView: View {
                 .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
                 .opacity(0.5)
-        )
+        ).ignoresSafeArea(edges: .bottom)
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView(viewModel: .mock)
+        Group {
+            MainView(viewModel: .mock)
+                
+            MainView(viewModel: .mock)
+                .preferredColorScheme(.dark)
+        }
     }
 }

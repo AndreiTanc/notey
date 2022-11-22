@@ -17,14 +17,19 @@ struct ToDoView: View {
         .background(
             Image(uiImage: .coverImage)
                 .resizable()
-                .scaledToFill()
         )
-        .padding(.horizontal)
+        .cornerRadius(20)
+        .padding(.horizontal, 30)
     }
 }
 
 struct ToDoView_Previews: PreviewProvider {
     static var previews: some View {
-        ToDoView(viewModel: .mock)
+        Group {
+            ToDoView(viewModel: .mock)
+
+            ToDoView(viewModel: .mock)
+                .preferredColorScheme(.dark)
+        }
     }
 }
