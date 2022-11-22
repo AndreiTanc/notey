@@ -26,6 +26,7 @@
 		FCADAED2292CD30B00456494 /* ToDoFactoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAED1292CD30B00456494 /* ToDoFactoryViewModel.swift */; };
 		FCADAED4292CD4A100456494 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAED3292CD4A100456494 /* Color.swift */; };
 		FCADAED6292CDE9500456494 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAED5292CDE9500456494 /* CustomButton.swift */; };
+		FCADAED8292CEE1400456494 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAED7292CEE1400456494 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		FCADAED1292CD30B00456494 /* ToDoFactoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoFactoryViewModel.swift; sourceTree = "<group>"; };
 		FCADAED3292CD4A100456494 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		FCADAED5292CDE9500456494 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		FCADAED7292CEE1400456494 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 		FC2435B5292B904A00A9A20D /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				FCADAED7292CEE1400456494 /* CoreDataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				FCADAED2292CD30B00456494 /* ToDoFactoryViewModel.swift in Sources */,
 				FC2435BB292B925E00A9A20D /* MainView.swift in Sources */,
 				FC97DB0D292B88840099DAA0 /* AppDelegate.swift in Sources */,
+				FCADAED8292CEE1400456494 /* CoreDataManager.swift in Sources */,
 				FCADAED6292CDE9500456494 /* CustomButton.swift in Sources */,
 				FCADAECC292C1C7D00456494 /* ToDoViewModel.swift in Sources */,
 				FC2435BF292B92D900A9A20D /* Router.swift in Sources */,
