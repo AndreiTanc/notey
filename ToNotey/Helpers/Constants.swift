@@ -17,3 +17,17 @@ struct Constants {
     }
     
 }
+
+typealias KeyConstants = Constants
+extension KeyConstants {
+    enum ToDo: String {
+        case title = "title"
+        case isHighPriority = "isHighPriority"
+        case isDone = "isDone"
+        case details = "details"
+        case recordingURL = "recordingURL"
+        case shouldWarn = "shouldWarn"
+        case date = "date"
+    }
+}
+

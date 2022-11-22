@@ -12,13 +12,13 @@ struct MainView: View {
     
     var body: some View {
         VStack {
-            HeaderView()
+            HeaderView(currentContentType: $viewModel.currentContentType)
             
             switch viewModel.currentContentType {
             case .todo:
                 ToDoView()
             case .notes:
-                ToDoView()
+                NotesView()
             case .folders:
                 ToDoView()
             }

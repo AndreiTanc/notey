@@ -18,6 +18,7 @@ struct ToDoFactoryView: View {
                 .padding(.bottom)
             
             titleTextField
+            highPriorityView
             
             saveButton
         }.padding(.horizontal)
@@ -36,7 +37,7 @@ struct ToDoFactoryView_Previews: PreviewProvider {
 }
 
 extension ToDoFactoryView {
-    var titleTextField: some View {
+    private var titleTextField: some View {
         TextField("What do you have to do?...", text: $viewModel.title)
             .foregroundColor(Color.theme.primary)
             .disableAutocorrection(true)
@@ -48,9 +49,17 @@ extension ToDoFactoryView {
             )
     }
     
-    var saveButton: some View {
+    private var highPriorityView: some View {
+        Toggle("Is it high priority?", isOn: $viewModel.isHighPriority)
+            .tint(Color.theme.blue)
+            .foregroundColor(Color.theme.primary)
+            .font(.callout)
+            .padding(.leading, 3)
+    }
+    
+    private var saveButton: some View {
         Button("Save") {
-//            viewModel.saveToDo()
+            viewModel.saveToDo()
         }.buttonStyle(CustomButton())
     }
 }
