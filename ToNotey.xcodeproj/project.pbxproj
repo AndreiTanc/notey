@@ -19,6 +19,8 @@
 		FC97DB0F292B88840099DAA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC97DB0E292B88840099DAA0 /* SceneDelegate.swift */; };
 		FC97DB16292B88860099DAA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC97DB15292B88860099DAA0 /* Assets.xcassets */; };
 		FC97DB19292B88860099DAA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC97DB17292B88860099DAA0 /* LaunchScreen.storyboard */; };
+		FCADAECA292C1C7300456494 /* ToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAEC9292C1C7300456494 /* ToDoView.swift */; };
+		FCADAECC292C1C7D00456494 /* ToDoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAECB292C1C7D00456494 /* ToDoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		FC97DB15292B88860099DAA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC97DB18292B88860099DAA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC97DB1A292B88860099DAA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCADAEC9292C1C7300456494 /* ToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoView.swift; sourceTree = "<group>"; };
+		FCADAECB292C1C7D00456494 /* ToDoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				FC2435BA292B925E00A9A20D /* MainView.swift */,
+				FCADAEC9292C1C7300456494 /* ToDoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -93,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				FC2435BC292B926E00A9A20D /* MainViewModel.swift */,
+				FCADAECB292C1C7D00456494 /* ToDoViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -227,7 +233,9 @@
 				FC2435BD292B926E00A9A20D /* MainViewModel.swift in Sources */,
 				FC2435BB292B925E00A9A20D /* MainView.swift in Sources */,
 				FC97DB0D292B88840099DAA0 /* AppDelegate.swift in Sources */,
+				FCADAECC292C1C7D00456494 /* ToDoViewModel.swift in Sources */,
 				FC2435BF292B92D900A9A20D /* Router.swift in Sources */,
+				FCADAECA292C1C7300456494 /* ToDoView.swift in Sources */,
 				FC97DB0F292B88840099DAA0 /* SceneDelegate.swift in Sources */,
 				FC2435C5292BB17D00A9A20D /* Constants.swift in Sources */,
 				FC2435CC292BC31800A9A20D /* HeaderScreenTypeButton.swift in Sources */,

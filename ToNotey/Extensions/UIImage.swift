@@ -15,14 +15,14 @@ fileprivate let kDark = "Dark"
 fileprivate let kLight = "Light"
 
 extension UIImage {
-    var backgroundImage: UIImage {
+    static var backgroundImage: UIImage {
         get {
             let imageName = kBackground + (Constants.isDarkMode ? kDark : kLight)
             return UIImage(named: imageName) ?? UIImage()
         }
     }
     
-    var coverImage: UIImage {
+    static var coverImage: UIImage {
         get {
             let imageName = kCover + (Constants.isDarkMode ? kDark : kLight)
             return UIImage(named: imageName) ?? UIImage()

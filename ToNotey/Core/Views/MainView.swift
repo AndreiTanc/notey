@@ -14,8 +14,18 @@ struct MainView: View {
         VStack {
             HeaderView()
             Text("Main")
+            
+            ToDoView()
+            
             Spacer()
         }.navigationBarHidden(true)
+        .background(
+            Image(uiImage: .backgroundImage)
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+                .opacity(0.5)
+        )
     }
 }
 

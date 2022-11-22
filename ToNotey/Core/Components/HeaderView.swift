@@ -10,21 +10,9 @@ import SwiftUI
 enum ScreenType: String {
     case toDo = "To Do"
     case notes = "Notes"
-    case folders = "Folders"
 }
 
 struct HeaderView: View {
-    var shouldDisplayFoldersBeforeNotes: Bool {
-        get {
-            UserDefaults.standard.bool(forKey: "shouldDisplayFoldersBeforeNotes")
-        }
-    }
-    
-    var secondScreenType: ScreenType {
-        get {
-            shouldDisplayFoldersBeforeNotes ? .folders : .notes
-        }
-    }
     
     @State var shouldPresentToDo = true
     @State var shouldPresentNotes = false
@@ -36,7 +24,7 @@ struct HeaderView: View {
                 shouldPresentNotes = false
             }
             
-            HeaderScreenTypeButton(isSelected: $shouldPresentNotes, title: secondScreenType.rawValue) {
+            HeaderScreenTypeButton(isSelected: $shouldPresentNotes, title: ScreenType.notes.rawValue) {
                 shouldPresentToDo = false
             }
         }
