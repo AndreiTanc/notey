@@ -16,8 +16,12 @@ enum ContentType {
 class MainViewModel: ObservableObject {
     @Published var currentContentType: ContentType = .todo
     
+    @Published var shouldPresentToDoFactoryView: Bool = false
+    
     func handleOnPlusButtonTapped() {
-        Router.shared.goToScreen(withRoute: .todoFactory)
+        if currentContentType == .todo {
+            shouldPresentToDoFactoryView = true
+        }
     }
 }
 

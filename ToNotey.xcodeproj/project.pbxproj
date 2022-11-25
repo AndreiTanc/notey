@@ -32,6 +32,7 @@
 		FCADAEE1292CFB8000456494 /* ToDoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAEE0292CFB8000456494 /* ToDoRow.swift */; };
 		FCADAEE5292D3F0800456494 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAEE4292D3F0800456494 /* NotesView.swift */; };
 		FCADAEE7292D3F1500456494 /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAEE6292D3F1500456494 /* NotesViewModel.swift */; };
+		FCADAEE9292E3B6B00456494 /* ToDoListSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAEE8292E3B6B00456494 /* ToDoListSectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		FCADAEE0292CFB8000456494 /* ToDoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoRow.swift; sourceTree = "<group>"; };
 		FCADAEE4292D3F0800456494 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		FCADAEE6292D3F1500456494 /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		FCADAEE8292E3B6B00456494 /* ToDoListSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListSectionHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				FCADAECD292CB19500456494 /* FooterView.swift */,
 				FCADAED5292CDE9500456494 /* CustomButton.swift */,
 				FCADAEE0292CFB8000456494 /* ToDoRow.swift */,
+				FCADAEE8292E3B6B00456494 /* ToDoListSectionHeader.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				FCADAEDF292CF5EE00456494 /* ToDoItem.swift in Sources */,
 				FC2435BF292B92D900A9A20D /* Router.swift in Sources */,
 				FCADAECA292C1C7300456494 /* ToDoView.swift in Sources */,
+				FCADAEE9292E3B6B00456494 /* ToDoListSectionHeader.swift in Sources */,
 				FC97DB0F292B88840099DAA0 /* SceneDelegate.swift in Sources */,
 				FCADAED4292CD4A100456494 /* Color.swift in Sources */,
 				FC2435C5292BB17D00A9A20D /* Constants.swift in Sources */,
@@ -352,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -406,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

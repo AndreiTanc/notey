@@ -18,13 +18,14 @@ struct ToDoRow: View {
     var onDoneItemChange: (() -> Void)?
     
     var body: some View {
-        HStack(spacing: 10) {
+        HStack(alignment: .top, spacing: 10) {
             if !toDoItem.isDone {
                 Image(kHighPrioImageName)
                     .opacity(toDoItem.isHighPriority ? 1 : 0)
+                    .padding(.top, 3)
             }
             
-            VStack {
+            VStack(alignment: .leading) {
                 Text(toDoItem.title)
                     .foregroundColor(toDoItem.isDone ? .theme.secondary : .theme.primary)
                     .strikethrough(toDoItem.isDone)
@@ -32,12 +33,14 @@ struct ToDoRow: View {
                 if let details = toDoItem.details, !toDoItem.isDone {
                     Text(details)
                         .foregroundColor(.theme.secondary)
+                        .lineLimit(1)
                 }
             }
             
             Spacer()
             Image(toDoItem.isDone ? kDoneToDoImageName : kNotDoneToDoImageName)
                 .onTapGesture(perform: handleOnTapGesture)
+                .padding(.top, 3)
         }
     }
     
@@ -48,6 +51,7 @@ struct ToDoRow: View {
         }
         
         toDoItem.isDone.toggle()
+        toDoItem.completingDate = toDoItem.isDone ? Date() : nil
         CoreDataManager.shared.saveContext()
     }
 }

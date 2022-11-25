@@ -31,8 +31,7 @@ struct HeaderScreenTypeButton: View {
                     handleOnTap?()
                 }
             }.foregroundColor(Color.theme.primary)
-            .font(.title2)
-            .fontWeight(.bold)
+            .font(.title2.weight(.bold))
             .opacity(isSelected ? 1 : 0.5)
         }
         .frame(height: 50)

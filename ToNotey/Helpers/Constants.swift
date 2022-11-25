@@ -28,6 +28,7 @@ extension KeyConstants {
         case recordingURL = "recordingURL"
         case shouldWarn = "shouldWarn"
         case date = "date"
+        case completingDate = "completingDate"
     }
 }
 

@@ -19,6 +19,7 @@ public class ToDoItem: NSManagedObject, Identifiable {
     @NSManaged public var details: String?
     @NSManaged public var shouldWarn: Bool
     @NSManaged public var date: Date
+    @NSManaged public var completingDate: Date?
     
     @nonobjc public class func fetchRequest() -> NSFetchRequest<ToDoItem> {
         return NSFetchRequest<ToDoItem>(entityName: "ToDoItem")
@@ -34,6 +35,7 @@ extension ToDoItem: NoteyDataProtocol {
         shouldWarn = data[KeyConstants.ToDo.shouldWarn.rawValue] as? Bool ?? false
         isHighPriority = data[KeyConstants.ToDo.isHighPriority.rawValue] as? Bool ?? false
         isDone = data[KeyConstants.ToDo.isDone.rawValue] as? Bool ?? false
+        completingDate = data[KeyConstants.ToDo.completingDate.rawValue] as? Date
     }
 }
 

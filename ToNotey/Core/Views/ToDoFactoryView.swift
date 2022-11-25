@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ToDoFactoryView: View {
-    @ObservedObject private(set) var viewModel = ToDoFactoryViewModel()
+    @ObservedObject private(set) var viewModel: ToDoFactoryViewModel
     
     var body: some View {
-        VStack {
+        VStack(spacing: 15) {
             Text("Create new task")
                 .foregroundColor(.theme.primary)
                 .fontWeight(.semibold)
@@ -20,8 +20,14 @@ struct ToDoFactoryView: View {
             titleTextField
             highPriorityView
             
+            showAdditionalInfoView
+            
+            if viewModel.shouldShowAdditionalInfo {
+                detailsView
+            }
+            
             saveButton
-        }.padding(.horizontal)
+        }.padding().background(Color.theme.primaryInversed).cornerRadius(15).padding(.horizontal)
     }
 }
 
@@ -55,6 +61,40 @@ extension ToDoFactoryView {
             .foregroundColor(Color.theme.primary)
             .font(.callout)
             .padding(.leading, 3)
+    }
+    
+    private var showAdditionalInfoView: some View {
+        HStack {
+            Spacer()
+            Text(viewModel.additionalInfoText)
+                .foregroundColor(Color.theme.primary)
+                .font(.caption)
+
+            Image(systemName: viewModel.additionalInfoImageName)
+        }.padding(.horizontal)
+        .onTapGesture {
+            withAnimation {
+                viewModel.shouldShowAdditionalInfo.toggle()
+            }
+        }
+    }
+    
+    private var detailsView: some View {
+        ZStack(alignment: .topLeading) {
+            TextEditor(text: $viewModel.details).autocorrectionDisabled().frame(height: 100)
+            Text(viewModel.details).opacity(0)
+            
+            if viewModel.details.isEmpty {
+                Text("Details for task...")
+                    .foregroundColor(.theme.secondary)
+                    .padding(.top, 10).padding(.leading, 5)
+            }
+        }
+        .padding(5)
+        .background(
+            RoundedRectangle(cornerRadius: 15)
+                .stroke(Color.theme.secondary, lineWidth: 2)
+        )
     }
     
     private var saveButton: some View {

@@ -21,7 +21,6 @@ struct ToDoView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding(.horizontal, 30)
-        .onAppear(perform: viewModel.handleOnAppear)
     }
 }
 
@@ -43,47 +42,15 @@ extension ToDoView {
                 if viewModel.todayTodoItems.isEmpty &&
                     viewModel.previousTodoItems.isEmpty {
                     
-//                    Present some text / image for completing all tasks
+                    Text("No more tasks for you!!!")
                 }
                 
                 if !viewModel.todayTodoItems.isEmpty {
-                    Text("Today:")
-                        .foregroundColor(.theme.primary)
-                        .font(.title2)
-                        .fontWeight(.semibold)
-                    
-                    Divider()
-                        .padding(.trailing, 30)
-                        .offset(y: -5)
-                    
-                    
-                    ForEach($viewModel.todayTodoItems) { $item in
-                        ToDoRow(toDoItem: $item, onItemChange: {
-                            withAnimation(.spring()) {
-                                viewModel.fetchAllToDos()
-                            }
-                        })
-                    }
-                    .onDelete(perform: viewModel.handleOnDelete(at:))
+                    todaysToDos
                 }
                 
                 if !viewModel.previousTodoItems.isEmpty {
-                    Text("Previous Days:")
-                        .foregroundColor(.theme.primary)
-                        .font(.title2)
-                        .fontWeight(.semibold)
-                    
-                    Divider()
-                        .padding(.trailing, 30)
-                        .offset(y: -5)
-                    
-                    ForEach($viewModel.previousTodoItems) { $item in
-                        ToDoRow(toDoItem: $item, onItemChange: {
-                            withAnimation(.spring()) {
-                                viewModel.fetchAllToDos()
-                            }
-                        })
-                    }
+                    previousToDos
                 }
             }.padding()
         }
@@ -92,6 +59,36 @@ extension ToDoView {
                 .resizable()
         )
         .cornerRadius(20)
+    }
+    
+    private var todaysToDos: some View {
+        VStack {
+            ToDoListSectionHeader(title: "Today:")
+            
+            ForEach($viewModel.todayTodoItems) { $item in
+                ToDoRow(toDoItem: $item, onItemChange: {
+                    withAnimation(.spring()) {
+                        viewModel.fetchAllToDos()
+                    }
+                })
+            }
+            .onDelete(perform: viewModel.handleOnDelete(at:))
+        }
+    }
+    
+    private var previousToDos: some View {
+        VStack {
+            ToDoListSectionHeader(title: "Previous Days:")
+            
+            ForEach($viewModel.previousTodoItems) { $item in
+                ToDoRow(toDoItem: $item, onItemChange: {
+                    withAnimation(.spring()) {
+                        viewModel.fetchAllToDos()
+                    }
+                })
+            }
+            .onDelete(perform: viewModel.handleOnDelete(at:))
+        }
     }
     
     private var doneToDosView: some View {

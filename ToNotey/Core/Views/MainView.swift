@@ -11,6 +11,30 @@ struct MainView: View {
     @ObservedObject private(set) var viewModel: MainViewModel
     
     var body: some View {
+        ZStack {
+            content
+            
+            if viewModel.shouldPresentToDoFactoryView {
+                todoFactoryPopup
+            }
+        }
+    }
+}
+
+struct MainView_Previews: PreviewProvider {
+    static var previews: some View {
+        Group {
+            MainView(viewModel: .mock)
+                
+            MainView(viewModel: .mock)
+                .preferredColorScheme(.dark)
+        }
+    }
+}
+
+extension MainView {
+    
+    private var content: some View {
         VStack {
             HeaderView(currentContentType: $viewModel.currentContentType)
             
@@ -35,15 +59,19 @@ struct MainView: View {
                 .opacity(0.5)
         ).ignoresSafeArea(edges: .bottom)
     }
-}
-
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        Group {
-            MainView(viewModel: .mock)
-                
-            MainView(viewModel: .mock)
-                .preferredColorScheme(.dark)
+    
+    private var todoFactoryPopup: some View {
+        ZStack {
+            Color.gray.blur(radius: 100, opaque: false)
+                .onTapGesture {
+                    viewModel.shouldPresentToDoFactoryView = false
+                }
+            
+            ToDoFactoryView(
+                viewModel: .init(
+                    shouldKeepOnPresenting: $viewModel.shouldPresentToDoFactoryView
+                )
+            )
         }
     }
 }

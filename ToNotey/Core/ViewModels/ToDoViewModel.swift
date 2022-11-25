@@ -20,8 +20,9 @@ class ToDoViewModel: ObservableObject {
     @Published var previousTodoItems: [ToDoItem] = []
     @Published var doneTodoItems: [ToDoItem] = []
     
-    func handleOnAppear() {
+    init() {
         fetchAllToDos()
+        deleteDoneTodosFromPreviousDays()
     }
     
     func fetchAllToDos() {
@@ -35,6 +36,24 @@ class ToDoViewModel: ObservableObject {
 //
 //            CoreDataManager.shared.delete(todoItems[index], ofType: ToDoItem.self)
 //        }
+    }
+    
+    private func deleteDoneTodosFromPreviousDays() {
+        let timeInterval = UserDefaults.standard.double(forKey: "lastDeletingDate")
+        let date = Date(timeIntervalSince1970: timeInterval)
+
+        if timeInterval == 0 || !Calendar(identifier: .gregorian).isDateInToday(date) {
+            allToDoItems.forEach { item in
+                if item.isDone, let date = item.completingDate,
+                   !Calendar(identifier: .gregorian).isDateInToday(date) {
+                    
+                    allToDoItems.removeAll(where: { $0 == item })
+                    CoreDataManager.shared.delete(item, ofType: ToDoItem.self)
+                }
+            }
+            
+            UserDefaults.standard.set(Date().timeIntervalSince1970, forKey: "lastDeletingDate")
+        }
     }
 }
 
