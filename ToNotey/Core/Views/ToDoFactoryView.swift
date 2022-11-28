@@ -24,6 +24,7 @@ struct ToDoFactoryView: View {
             
             if viewModel.shouldShowAdditionalInfo {
                 detailsView
+                recordingButton
             }
             
             saveButton
@@ -95,6 +96,12 @@ extension ToDoFactoryView {
             RoundedRectangle(cornerRadius: 15)
                 .stroke(Color.theme.secondary, lineWidth: 2)
         )
+    }
+    
+    private var recordingButton: some View {
+        Button("Recording button") {
+            viewModel.handleOnRecordButtonPressed()
+        }
     }
     
     private var saveButton: some View {

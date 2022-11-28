@@ -25,6 +25,8 @@ class ToDoFactoryViewModel: ObservableObject {
     var additionalInfoText: String = "Show additional info"
     var additionalInfoImageName: String = "chevron.down"
     
+    var audioRecordingManager = AudioRecordingManager()
+    
     init(shouldKeepOnPresenting: Binding<Bool>) {
         self._shouldKeepOnPresenting = shouldKeepOnPresenting
     }
@@ -43,6 +45,14 @@ class ToDoFactoryViewModel: ObservableObject {
         )
         
         shouldKeepOnPresenting = false
+    }
+    
+    func handleOnRecordButtonPressed() {
+        if audioRecordingManager.recording {
+            audioRecordingManager.stopRecording()
+        } else {
+            audioRecordingManager.startRecording()
+        }
     }
 }
 

@@ -33,6 +33,7 @@
 		FCADAEE5292D3F0800456494 /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAEE4292D3F0800456494 /* NotesView.swift */; };
 		FCADAEE7292D3F1500456494 /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAEE6292D3F1500456494 /* NotesViewModel.swift */; };
 		FCADAEE9292E3B6B00456494 /* ToDoListSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAEE8292E3B6B00456494 /* ToDoListSectionHeader.swift */; };
+		FCADAEEB2930DE8B00456494 /* AudioRecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCADAEEA2930DE8B00456494 /* AudioRecordingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		FCADAEE4292D3F0800456494 /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		FCADAEE6292D3F1500456494 /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
 		FCADAEE8292E3B6B00456494 /* ToDoListSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListSectionHeader.swift; sourceTree = "<group>"; };
+		FCADAEEA2930DE8B00456494 /* AudioRecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecordingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				FCADAED7292CEE1400456494 /* CoreDataManager.swift */,
+				FCADAEEA2930DE8B00456494 /* AudioRecordingManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				FCADAED8292CEE1400456494 /* CoreDataManager.swift in Sources */,
 				FCADAED6292CDE9500456494 /* CustomButton.swift in Sources */,
 				FCADAECC292C1C7D00456494 /* ToDoViewModel.swift in Sources */,
+				FCADAEEB2930DE8B00456494 /* AudioRecordingManager.swift in Sources */,
 				FCADAEDF292CF5EE00456494 /* ToDoItem.swift in Sources */,
 				FC2435BF292B92D900A9A20D /* Router.swift in Sources */,
 				FCADAECA292C1C7300456494 /* ToDoView.swift in Sources */,
